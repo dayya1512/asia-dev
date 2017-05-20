@@ -1,0 +1,41 @@
+<html>
+<head>
+	<script type="text/javascript" src=jscode.js>
+	</script>
+</head>
+
+<body>
+	
+		<input type="button" onclick="level()" value="Total Score">
+		
+		<script type="text/javascript">
+		function level(){
+		
+		var msg; // Message
+		var level = 2; // Level
+
+		switch (level) {
+
+		case 1:
+		msg = 'Good luck on the first test';
+		break;
+		case 2:
+		msg = 'Second of three - keep going!';
+		break;
+		case 3:
+		msg = 'Final round, almost there!';
+		break;
+		default:
+		msg = 'Good luck!';
+		break;
+		}
+		
+		console.log(msg)
+		
+	}	
+	</script>
+
+</body>
+</html>
+
+		

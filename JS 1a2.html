@@ -1,0 +1,32 @@
+<html>
+<head>
+	<script type="text/javascript" src=jscode.js>
+	</script>
+</head>
+
+<body>
+	
+		<input type="button" onclick="score()" value="Total Score">
+		
+		<script type="text/javascript">
+		function score()
+		{
+		var score =5; // Score
+		var msg; //Message
+
+		if (score>=50) {// If Score is 50 or higher
+			msg='Congratulations'	
+			msg +='Proceed to the next round';}
+
+		else {// If Score is lower than 50
+			msg='Failed'	
+			msg +='Try Again';}
+
+		console.log(msg)
+
+		alert(msg);
+		}
+	</script>
+</body>
+</html>
+
