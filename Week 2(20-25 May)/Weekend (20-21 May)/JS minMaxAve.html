@@ -1,0 +1,42 @@
+<html>
+<head>
+	<script type="text/javascript">
+	</script>
+</head>
+
+<body>
+		<input type="button" onclick="maxMinAvg([0,-3,5,9,10])" value="Total Score">
+		<script type="text/javascript">
+		
+		function maxMinAvg(arr) { 
+    	var max = arr[0];
+    	var min = arr[0];
+    	var sum = arr[0];
+    	
+    	for (var i = 1; i < arr.length; i++) {
+        
+        	if (arr[i] > max) {
+            max = arr[i];
+       		 }
+        	
+        	if (arr[i] < min) {
+            min = arr[i];
+       		 }
+        
+        	sum = sum + arr[i];
+    		}
+    		
+    		var avg = sum / arr.length;
+
+    	console.log(min)
+    	console.log(max)
+    	console.log(avg)
+
+    	return [max, min, avg];
+		
+		}
+
+	</script>
+
+</body>
+</html>

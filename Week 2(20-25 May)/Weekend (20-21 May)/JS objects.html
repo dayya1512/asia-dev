@@ -1,0 +1,33 @@
+<html>
+<head>
+	<script type="text/javascript">
+	</script>
+</head>
+
+<body>
+		
+	<script type="text/javascript">
+		function Hotel(name,rooms,booked) { 
+			this.name=name;
+			this.rooms=rooms;
+			this.booked=booked;
+			this.checkAvailability=function(){
+				return this.rooms-this.booked;
+			};
+		}
+
+
+
+
+		var h=new Hotel("Hilton",50,10);
+		var h2=new Hotel("Blue Wave",50,10);
+
+		console.log(h);
+		console.log(h2);
+
+		console.log("Hotel:"+h.name+",available rooms:"+h.checkAvailability());
+		console.log("Hotel:"+h2.name+",available rooms:"+h2.checkAvailability());
+	</script>
+
+</body>
+</html>
