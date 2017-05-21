@@ -1,0 +1,34 @@
+<html>
+<head>
+	<script type="text/javascript">
+	</script>
+</head>
+
+<body>
+	<title>Date and Time</title>
+	<script type="text/javascript">
+
+	var today=new Date();
+	console.log(today);
+
+	var year=today.getFullYear();
+	console.log(year);
+
+	var firstClass=new Date('May 13,2017 09:00:00');
+	console.log(firstClass)
+
+	var difference=today.getTime()-firstClass.getTime();
+	console.log(difference)
+
+	var DAY_IN_SECONDS=86400000
+	var differenceInDays=difference/DAY_IN_SECONDS;
+	console.log(differenceInDays)
+
+	var msg=Math.floor(differenceInDays)+' days since we start coding!';
+	document.write(msg);
+
+
+	</script>
+
+</body>
+</html>
