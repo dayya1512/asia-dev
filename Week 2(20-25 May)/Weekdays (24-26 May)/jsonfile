@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "ms",
+        "first": "amy",
+        "last": "stephens"
+      },
+      "location": {
+        "street": "7291 north road",
+        "city": "st albans",
+        "state": "mid glamorgan",
+        "postcode": "F3 1SF"
+      },
+      "email": "amy.stephens@example.com",
+      "login": {
+        "username": "bigrabbit748",
+        "password": "iceberg",
+        "salt": "UHFj7Z8X",
+        "md5": "84ae61b5502336ccd2298e12f537e3c6",
+        "sha1": "050ad53c81bd76076b28d97be5f8869a8621f371",
+        "sha256": "ae1e58f4d807cfa067389ce36a231e0e8410fe6d27457b28719131b9afb3e4f2"
+      },
+      "dob": "1984-08-06 11:20:13",
+      "registered": "2006-01-16 15:27:04",
+      "phone": "017683 63391",
+      "cell": "0724-577-301",
+      "id": {
+        "name": "NINO",
+        "value": "GY 94 57 90 A"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/86.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/86.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/86.jpg"
+      },
+      "nat": "GB"
+    }
+  ],
+  "info": {
+    "seed": "b114e4075f2cd043",
+    "results": 1,
+    "page": 1,
+    "version": "1.1"
+  }
+}

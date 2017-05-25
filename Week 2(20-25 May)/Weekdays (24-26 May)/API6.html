@@ -1,0 +1,31 @@
+<html>
+<head>
+	<div id="sample">
+		<button type="button" onclick="Post()">Load</button>
+	</div>
+
+	<script type="text/javascript">
+		function Post(){
+			var xhttp=new XMLHttpRequest();
+			xhttp.onreadystatechange=function(){
+
+
+			if(this.readyState== 4 && this.status== 201){
+					alert("Succesful")
+				}
+			};
+
+
+			var body = '{"NAME":"NAME", "EMAIL":"EMAIL", "PHONE":"PHONE"}'
+
+
+			xhttp.open("POST","https://sheetsu.com/apis/v1.0/a84bad9d67e6", true);
+			xhttp.setRequestHeader("Content-type", "application/json");
+			xhttp.send(body);
+		}
+
+		
+	</script>
+</head>
+
+</html>

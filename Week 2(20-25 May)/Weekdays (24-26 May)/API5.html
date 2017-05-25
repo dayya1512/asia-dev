@@ -1,0 +1,41 @@
+<html>
+<head>
+	<div id="sample">
+		<button type="button" onclick="loadDoc()">Load</button>
+	</div>
+
+	<script type="text/javascript">
+		function loadDoc(){
+			var xhttp=new XMLHttpRequest();
+			xhttp.onreadystatechange=function(){
+
+
+			if(this.readyState== 4 && this.status== 200){
+				var json=JSON.parse(this.responseText);
+				document.getElementById("Name").innerHTML=
+					"Name:" + json[0].NAME;
+
+				document.getElementById("Phone").innerHTML=
+					"</br> Phone Number:" + json.[0].PHONE;
+
+				document.getElementById("Email").innerHTML=
+					"</br> Email:" + json.[0].EMAIL;
+
+				}
+ 
+			};
+			xhttp.open("GET","https://sheetsu.com/apis/v1.0/a84bad9d67e6", true);
+			xhttp.send();
+		}
+	</script>
+</head>
+
+<body>
+	<h1>About Me</h1>
+	<div id="Picture"></div>
+	<p> My name is <span id="Name"></span></p>
+	<p> My phone is <span id="Phone"></span></p>
+	<p> My Eemail is <span id="Email"></span></p>
+	>
+</body>
+</html>

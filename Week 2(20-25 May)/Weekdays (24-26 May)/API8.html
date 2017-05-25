@@ -1,0 +1,41 @@
+<html>
+<head>
+	<div id="sample">
+		
+	</div>
+
+	<script type="text/javascript">
+	loadDoc();
+		function loadDoc(){
+			var xhttp=new XMLHttpRequest();
+			xhttp.onreadystatechange=function(){
+
+
+			if(this.readyState== 4 && this.status== 200){
+				var json=JSON.parse(this.responseText);
+
+
+				for (i=0; i<4;i++){
+				document.getElementById("userTable").innerHTML += "<tr><td>"
+				+ json[i].PHONE + "</td></tr>";
+					}
+				}
+
+				
+
+			};
+			xhttp.open("GET","https://sheetsu.com/apis/v1.0/a84bad9d67e6", true);
+			xhttp.send();
+
+		}
+		
+	</script>
+</head>
+
+<body>
+	<table border="1" id=userTable>
+	<tr><th>Phone</th></tr>
+	</table>
+</body>
+	
+</html>
